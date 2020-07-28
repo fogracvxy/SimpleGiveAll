@@ -14,10 +14,9 @@ private SimpleGiveAll Plugin;
 public SimpleGiveExp (SimpleGiveAll plugin){
 }
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        String potentPlayer = args[0];
+    public boolean onCommand(CommandSender Player, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("sgiveexp")){
-            Player p = Bukkit.getServer().getPlayer(potentPlayer);
+            Player p = Bukkit.getServer().getPlayer(args[0]);
             if(p.isOnline()){
                 p.giveExp(2000,false);
                 p.sendMessage(ChatColor.GREEN + "You gained 2000 exp");
@@ -25,6 +24,7 @@ public SimpleGiveExp (SimpleGiveAll plugin){
             }else  {
                 p.sendMessage(ChatColor.RED + "Player is not online");
             }
+            return true;
         }
         return false;
     }
