@@ -1,0 +1,6 @@
+name: SimpleGiveAll
+version: ${project.version}
+main: atomictempest.simplegiveall.SimpleGiveAll
+api-version: 1.16
+authors: [AtomicTempest]
+description: Give item to all players
