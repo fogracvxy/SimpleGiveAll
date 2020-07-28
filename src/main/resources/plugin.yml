@@ -4,3 +4,7 @@ main: atomictempest.simplegiveall.SimpleGiveAll
 api-version: 1.16
 authors: [AtomicTempest]
 description: Give item to all players
+commands:
+  sgiveexp:
+    description:  Give 2000 exp to player
+    aliases: [gexp]
