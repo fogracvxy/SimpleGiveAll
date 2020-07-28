@@ -9,13 +9,13 @@ public final class SimpleGiveAll extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        logger.info("Plugin se pali");
+        logger.info("[SimpleGiveAll] is turning on!");
 
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        logger.info("Plugin se gasi");
+        logger.info("[SimpleGiveAll] is turning off");
     }
 }
